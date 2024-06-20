@@ -50,7 +50,7 @@ const AppointmentPage = () => {
 
   useEffect(() => {
     const checkPaymentmethod = () => {
-      if (paymentType == 'creditCard') {
+      if (paymentType === 'creditCard') {
         return !nameOnCard || !cardNumber || !expiredMonth || !cardExpiredYear || !cvv || !isCheck
       }
       else {
