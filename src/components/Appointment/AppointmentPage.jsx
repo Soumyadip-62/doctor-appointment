@@ -103,15 +103,15 @@ const AppointmentPage = () => {
   const handleDateChange = (date) => { setSelectedDate(moment(date).format('YYYY-MM-DD HH:mm:ss')) }
 
   const steps = [
-    {
-      title: 'Select Doctor',
-      content: <SelectApppointment
-        handleDateChange={handleDateChange}
-        selectedDate={selectedDate}
-        selectTime={selectTime}
-        setSelectTime={setSelectTime}
-      />
-    },
+    // {
+    //   title: 'Select Doctor',
+    //   content: <SelectApppointment
+    //     handleDateChange={handleDateChange}
+    //     selectedDate={selectedDate}
+    //     selectTime={selectTime}
+    //     setSelectTime={setSelectTime}
+    //   />
+    // },
     {
       title: 'Select Appointment Date & Time',
       content: <SelectApppointment
