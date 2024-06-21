@@ -15,8 +15,8 @@ const SignIn = ({ handleResponse }) => {
     const [show, setShow] = useState(true);
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const navigate = useNavigate();
-    const [userLogin, { isError, isLoading, isSuccess, error }] = useUserLoginMutation();
     const [forgotEmail, setForgotEmail] = useState('');
+    const [userLogin, { isError, isLoading, isSuccess, error }] = useUserLoginMutation();
     const [resetPassword, { isError: resetIsError, isSuccess: resetIsSuccess, error: resetError, isLoading: resetIsLoading }] = useResetPasswordMutation();
 
     setTimeout(() => {
