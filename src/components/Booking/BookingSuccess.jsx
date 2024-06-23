@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Footer from '../Shared/Footer/Footer';
-import { FaBriefcase, FaCalendarCheck, FaRegClock, FaLocationArrow, FaCalendarAlt, FaLink, FaAlignLeft  } from "react-icons/fa";
+import { FaBriefcase, FaCalendarCheck, FaRegClock, FaLocationArrow, FaCalendarAlt, FaLink, FaAlignLeft } from "react-icons/fa";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Button, Tag, Tooltip } from 'antd';
 import moment from 'moment';
@@ -51,7 +51,7 @@ const BookingSuccess = () => {
 
                             <div className='card border-0 p-3 rounded mb-5'>
                                 <div className='d-flex gap-3 mb-2 align-items-center'>
-                                    <FaAlignLeft style={{ fontSize: '1rem' }}/>
+                                    <FaAlignLeft style={{ fontSize: '1rem' }} />
                                     <Link to={`/dashboard/appointments/${id}`}><h5 className='text-primary'>View Appointment Details</h5></Link>
                                 </div>
                                 <div className='d-flex gap-3 mb-1'>
@@ -64,7 +64,7 @@ const BookingSuccess = () => {
                                 </div>
                                 <div className='d-flex gap-3 mb-1'>
                                     <div><FaLocationArrow style={{ fontSize: '1rem' }} /></div>
-                                    <p className='text-start'>Sylhet, Bangladesh<br /><span className="form-text">1020BD, Amertam, NorthEast,Srimongol</span></p>
+                                    <p className='text-start'>Burdwan, West Bengal<br /><span className="form-text">713104, GolpaBag, near kali mandir</span></p>
                                 </div>
                                 <div className='d-flex gap-3 mb-2'>
                                     <div><FaLink style={{ fontSize: '1rem' }} /></div>
